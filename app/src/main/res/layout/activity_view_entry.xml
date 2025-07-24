@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Top App Bar -->
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:title="View Entry"
+        app:titleTextColor="@android:color/white" />
+
+    <!-- Entry Content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="16dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/viewMood"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🙂"
+                android:textSize="32sp"
+                android:layout_gravity="center_horizontal"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/viewDate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Jul 20, 2025"
+                android:textStyle="bold"
+                android:textSize="16sp"
+                android:paddingBottom="8dp" />
+
+            <TextView
+                android:id="@+id/viewText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Your journal entry will appear here..."
+                android:textSize="16sp"
+                android:lineSpacingExtra="6dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
