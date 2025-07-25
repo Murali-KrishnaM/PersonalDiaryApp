@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DiaryApp</string>
+    <string-array name="mood_array">
+        <item>😀 Happy</item>
+        <item>😐 Neutral</item>
+        <item>😢 Sad</item>
+        <item>😠 Angry</item>
+        <item>❤️ Love</item>
+    </string-array>
+</resources>
