@@ -1,0 +1,23 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:label="DiaryApp"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.Material3.DayNight.NoActionBar">
+
+        <activity android:name=".AddEntryActivity" />
+        <activity android:name=".ViewEntryActivity" />
+
+        <activity
+            android:name=".JournalListActivity"
+            android:exported="true">  <!-- 🚨 THIS LINE IS THE FIX -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
